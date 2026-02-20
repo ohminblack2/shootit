@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>3x3 Overlay</title>
+<style>
+body{background:transparent;color:white;font-family:Arial;}
+#board{display:flex;justify-content:space-between;align-items:center;font-size:80px;padding:10px;}
+.team{width:30%;text-align:center;}
+#center{text-align:center;font-size:70px;}
+#shot{color:yellow;font-size:90px;}
+</style>
+</head>
+<body>
+
+<div id="board">
+<div class="team">
+<div id="teamA">TEAM A</div>
+<div id="scoreA">0</div>
+<div>F <span id="foulA">0</span></div>
+</div>
+
+<div id="center">
+<div id="clock">10:00</div>
+<div id="shot">12</div>
+</div>
+
+<div class="team">
+<div id="teamB">TEAM B</div>
+<div id="scoreB">0</div>
+<div>F <span id="foulB">0</span></div>
+</div>
+</div>
+
+<script src="engine.js"></script>
+</body>
+</html>
